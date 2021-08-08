@@ -36,7 +36,7 @@ jdk 11
 
 # 存储引擎表现
 ---
-本项目采用**多线程插入、查询数据(ThreadPoolExecutor、CountDownLatch)**来做存储引擎的压力测试。
+本项目采用**多线程插入、查询数据(ThreadPoolExecutor、CountDownLatch)** 来做存储引擎的压力测试。
 ### 插入数据
 ---
 这里采取的方式是**随机插入数据(key:Integer,value:String)**，所获取的是**按照对应数据量运行五次取平均**得出的数据。  
