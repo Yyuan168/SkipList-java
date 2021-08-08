@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Random;
 
+@SuppressWarnings("unchecked")
 public class SkipList<K extends Comparable<K>,V> {
     // the data structure of zset implemented in redis
     private SkipListNode<K,V> head;     // pointer to head

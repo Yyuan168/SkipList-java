@@ -1,5 +1,6 @@
 package com.yy.skiplist;
 
+@SuppressWarnings("unchecked")
 public class SkipListNode<K extends Comparable<K>,V> {
     // the node structure in the SkipList
     private static final int DEFAULT_MAX_LEVEL = 32;     // the default maximum level in redis

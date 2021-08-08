@@ -11,8 +11,8 @@ public class Main {
             skipList.insert(num, (char) ('a' + num));
         }
 
-        String path = "C:\\Users\\wodem\\Desktop";
-        skipList.save(path);
+//        String path = "C:\\Users\\wodem\\Desktop";
+//        skipList.save(path);
         skipList.show();
         System.out.println("find e: " + skipList.query('e' - 'a').getValue());
         System.out.println("find j: " + skipList.query('j' - 'a').getValue());
@@ -24,9 +24,9 @@ public class Main {
 
         skipList.show();
 
-        SkipList<Integer, Character> tmp = new SkipList<>();
-        tmp.load(path + "/data");
-        tmp.show();
+//        SkipList<Integer, Character> tmp = new SkipList<>();
+//        tmp.load(path + "/data");
+//        tmp.show();
     }
 
     private static int[] randomArray(int min, int max, int n){
