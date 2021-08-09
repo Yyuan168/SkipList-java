@@ -30,8 +30,8 @@ jdk 11
 * load (加载已保存的跳表)
 * show (显示跳表)
 
-# 存储引擎表现
-本项目采用**多线程插入、查询数据(ThreadPoolExecutor、CountDownLatch)** 来做存储引擎的压力测试。
+# 压力测试表现
+本项目采用**多线程并发插入、查询数据(ThreadPoolExecutor、CountDownLatch)** 来模拟多个用户同时访问和更改数据库。
 ### 插入数据
 这里采取的方式是**随机插入数据(key:Integer,value:String)**，所获取的是**按照对应数据量运行五次取平均**得出的数据。  
 |插入数据规模(万条)|平均树高(层)|平均耗时(s)|  
